@@ -10,6 +10,11 @@ int main(int argc, char *argv[])
          'G', 'a', 'w', 'l', 'i', 'k', '\0'
     };
     
+    areas[0] = 100;
+    areas[1] = name[0];     // 83 is the ASCII value for 'S'
+    name[0] = 'C';
+    full_name[6] = '$';
+    
     // WARNING: On some systems you may have to change the
     // %ld in this code to a %u since it will use unsigned ints
     printf("The size of an int: %ld\n", sizeof(int));
